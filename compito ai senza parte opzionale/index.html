@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piattaforma Studenti - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Piattaforma Studenti</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="registrati.html">Registrati</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <h2>Lista degli Studenti Registrati</h2>
+            
+            <div class="student-count">
+                <p>Totale studenti registrati: <span id="totalStudents">0</span></p>
+            </div>
+
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Cerca studente...">
+            </div>
+
+            <div class="table-container">
+                <table id="studentTable">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Cognome</th>
+                            <th>Data di Nascita</th>
+                            <th>Email</th>
+                            <th>Corso</th>
+                        </tr>
+                    </thead>
+                    <tbody id="studentList">
+                        <!-- Gli studenti verranno aggiunti qui dinamicamente -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="noStudents" class="message">
+                <p>Nessuno studente registrato. Vai alla pagina <a href="registrati.html">Registrati</a> per aggiungere studenti.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Piattaforma Studenti</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
